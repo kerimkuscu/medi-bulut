@@ -5,10 +5,7 @@ import tr from './tr/index.js'
 export default defineI18nConfig(() => {
     return {
         legacy: false,
-        detectBrowserLanguage: {
-            redirectOnRoot: true,
-            alwaysRedirect: true
-        },
+        locale: 'tr',
         messages: {
             en,
             tr

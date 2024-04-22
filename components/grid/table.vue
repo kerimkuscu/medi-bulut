@@ -21,7 +21,7 @@
     <slot name="loader" v-if="loading">
       <tr>
         <td :colspan="visibleColumns.length" class="text-center py-8" colspan="4">
-          <p>Loading...</p>
+          <p>{{ $t('layouts.general.loading') }}</p>
         </td>
       </tr>
     </slot>
