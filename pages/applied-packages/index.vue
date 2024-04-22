@@ -1,5 +1,5 @@
 <template>
   <div>
-    adana merkez
+    applied
   </div>
 </template>
