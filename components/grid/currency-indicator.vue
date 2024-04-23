@@ -8,7 +8,7 @@ export default {
 
   props: {
     currency: {
-      type: String,
+      type: String, Number,
       default: ''
     }
   },

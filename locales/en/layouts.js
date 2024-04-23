@@ -1,6 +1,10 @@
 export default {
     general: {
-        loading: 'Loading...'
+        loading: 'Loading...',
+        save: 'Save',
+        cancel: 'Cancel',
+        edit: 'Edit',
+        delete: 'Delete',
     },
 
     navbar: {

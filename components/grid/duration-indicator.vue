@@ -8,7 +8,7 @@ export default {
 
   props: {
     duration: {
-      type: String,
+      type: [String, Number],
       default: ''
     },
 

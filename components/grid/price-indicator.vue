@@ -8,7 +8,7 @@ export default {
 
   props: {
     price: {
-      type: String,
+      type: [String, Number],
       default: ''
     },
 
