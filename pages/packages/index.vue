@@ -199,6 +199,12 @@ export default {
       } catch (error) {
         console.error("Error deleting package:", error);
       }
+    };
+
+    const searchText = ref('');
+
+    const performSearch = (text) => {
+      items.value = text;
     }
 
     return {
@@ -218,7 +224,8 @@ export default {
       userIds,
       saveNewPackage,
       getPackageData,
-      deletePackageData
+      deletePackageData,
+      searchText
     };
   },
 

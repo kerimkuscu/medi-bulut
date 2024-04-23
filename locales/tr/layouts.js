@@ -1,10 +1,12 @@
 export default {
     general: {
         loading: 'Yükleniyor...',
-        save: 'Save',
-        cancel: 'Cancel',
+        save: 'Kaydet',
+        cancel: 'Çıkış',
         edit: 'Düzenle',
         delete: 'Sil',
+        remaining_time: 'Kalan Süre',
+        day: 'Gün',
     },
 
     navbar: {

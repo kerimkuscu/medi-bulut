@@ -1,13 +1,13 @@
 export default {
     grid: {
-        name: 'Package Name',
-        experts: 'Experts',
-        examination: 'Examination',
-        control: 'Control',
-        duration: 'Validity',
-        service_fee: 'Service Fee',
-        currency: 'Currency',
-        situation: 'Active / Passive'
+        name: 'PACKAGE NAME',
+        experts: 'EXPERTS',
+        examination: 'EXAMINATION',
+        control: 'CONTROL',
+        duration: 'VALIDITY',
+        service_fee: 'SERVICE FEE',
+        currency: 'CURRENCY',
+        situation: 'ACTIVE/PASSIVE'
     },
 
     modal: {

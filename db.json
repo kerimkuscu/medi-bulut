@@ -28,92 +28,9 @@
         "1",
         "2"
       ]
-    },
-    {
-      "id": "3",
-      "name": "20 Seanslık Masaj Paketi",
-      "userIds": [
-        "1",
-        "2"
-      ],
-      "examination": 20,
-      "control": 0,
-      "duration": 3,
-      "durationUnit": "week",
-      "price": 12120,
-      "currency": "TRY",
-      "status": 0
-    },
-    {
-      "id": "4",
-      "name": "5 Binlik Dolgu Paketi",
-      "userId": 1,
-      "examination": 2,
-      "control": 2,
-      "duration": 6,
-      "durationUnit": "month",
-      "price": 1910000,
-      "currency": "TRY",
-      "status": 1,
-      "userIds": [
-        "1",
-        "2"
-      ]
     }
   ],
   "applied-packages": [
-    {
-      "id": 1,
-      "startedAt": "2011-07-05T23:35:26.928Z",
-      "userId": "4",
-      "packageId": "3",
-      "examination": 6,
-      "control": 1,
-      "duration": 1,
-      "durationUnit": "week",
-      "note": "",
-      "price": 879.77,
-      "currency": "EUR"
-    },
-    {
-      "id": 2,
-      "startedAt": "2014-04-04T21:56:53.507Z",
-      "userId": "2",
-      "packageId": "4",
-      "examination": 1,
-      "control": 10,
-      "duration": 1,
-      "durationUnit": "year",
-      "note": "",
-      "price": 1549.28,
-      "currency": "EUR"
-    },
-    {
-      "id": 3,
-      "startedAt": "2010-03-28T02:17:09.269Z",
-      "userId": "5",
-      "packageId": "4",
-      "examination": 2,
-      "control": 7,
-      "duration": 2,
-      "durationUnit": "week",
-      "note": "",
-      "price": 2271.35,
-      "currency": "TRY"
-    },
-    {
-      "id": 4,
-      "startedAt": "2012-11-01T13:16:55.756Z",
-      "userId": "1",
-      "packageId": "3",
-      "examination": 4,
-      "control": 6,
-      "duration": 3,
-      "durationUnit": "month",
-      "note": "",
-      "price": 4215.83,
-      "currency": "TRY"
-    },
     {
       "id": 5,
       "startedAt": "2011-12-19T23:25:12.352Z",
@@ -126,19 +43,6 @@
       "note": "",
       "price": 1806.74,
       "currency": "TRY"
-    },
-    {
-      "id": 6,
-      "startedAt": "2013-05-31T18:21:01.558Z",
-      "userId": "1",
-      "packageId": "3",
-      "examination": 4,
-      "control": 8,
-      "duration": 5,
-      "durationUnit": "month",
-      "note": "",
-      "price": 1681.36,
-      "currency": "EUR"
     },
     {
       "id": 7,
@@ -154,19 +58,6 @@
       "currency": "TRY"
     },
     {
-      "id": 8,
-      "startedAt": "2011-06-17T15:27:52.793Z",
-      "userId": "4",
-      "packageId": "4",
-      "examination": 6,
-      "control": 9,
-      "duration": 3,
-      "durationUnit": "day",
-      "note": "",
-      "price": 322.27,
-      "currency": "USD"
-    },
-    {
       "id": 9,
       "startedAt": "2011-10-24T18:54:54.771Z",
       "userId": "4",
@@ -180,19 +71,6 @@
       "currency": "EUR"
     },
     {
-      "id": 10,
-      "startedAt": "2011-12-15T02:29:46.470Z",
-      "userId": "3",
-      "packageId": "4",
-      "examination": 4,
-      "control": 6,
-      "duration": 6,
-      "durationUnit": "day",
-      "note": "",
-      "price": 3894.18,
-      "currency": "TRY"
-    },
-    {
       "id": 11,
       "startedAt": "2011-08-27T10:49:23.225Z",
       "userId": "1",
@@ -203,45 +81,6 @@
       "durationUnit": "year",
       "note": "",
       "price": 1206.19,
-      "currency": "TRY"
-    },
-    {
-      "id": 12,
-      "startedAt": "2011-12-18T20:01:55.084Z",
-      "userId": "2",
-      "packageId": "3",
-      "examination": 10,
-      "control": 1,
-      "duration": 6,
-      "durationUnit": "month",
-      "note": "",
-      "price": 1408.87,
-      "currency": "USD"
-    },
-    {
-      "id": 13,
-      "startedAt": "2013-02-11T16:03:14.019Z",
-      "userId": "5",
-      "packageId": "3",
-      "examination": 7,
-      "control": 1,
-      "duration": 4,
-      "durationUnit": "month",
-      "note": "",
-      "price": 4550.38,
-      "currency": "TRY"
-    },
-    {
-      "id": 14,
-      "startedAt": "2014-05-31T05:25:50.028Z",
-      "userId": "5",
-      "packageId": "4",
-      "examination": 2,
-      "control": 1,
-      "duration": 5,
-      "durationUnit": "day",
-      "note": "",
-      "price": 1956.44,
       "currency": "TRY"
     },
     {
@@ -272,13 +111,6 @@
       "packageId": "1",
       "userId": "2",
       "note": ""
-    },
-    {
-      "id": 3,
-      "type": "control",
-      "packageId": "4",
-      "userId": "3",
-      "note": "Gerekli kontrol yapıldı"
     }
   ],
   "users": [

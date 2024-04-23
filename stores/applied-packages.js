@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia';
 
-export const usePackagesStore = defineStore('packages', {
+export const useAppliedPackagesStore = defineStore('appliedPackages', {
     state: () => ({
         items: [],
         loading: true,
@@ -15,39 +15,43 @@ export const usePackagesStore = defineStore('packages', {
             {text: 'Ay', value: 'month'},
             {text: 'Yıl', value: 'year'},
         ],
-        packageName: '',
+        userId: '',
+        packageId: '',
         examination: 0,
+        startedAt: '',
         control: 0,
         duration: 0,
         durationUnit: null,
         price: 0,
         currency: null,
-        userIds: null,
+        note: null,
         searchText: ''
     }),
 
     actions: {
         async fetchPackages() {
             this.loading = true;
-            this.items = await $fetch('http://localhost:3001/packages');
+            this.items = await $fetch('http://localhost:3001/applied-packages');
             this.loading = false;
         },
 
         async savePackage(newPackage) {
             console.log(newPackage);
             const formData = {
-                name: newPackage.name,
+                userId: newPackage.userId,
+                packageId: newPackage.packageId,
                 examination: newPackage.examination,
+                startedAt: newPackage.startedAt,
                 control: newPackage.control,
                 duration: newPackage.duration,
                 durationUnit: newPackage.durationUnit,
                 price: newPackage.price,
                 currency: newPackage.currency,
-                userIds: newPackage.userIds
+                note: newPackage.note,
             }
 
             try {
-                const {data: responseData} = await $fetch('http://localhost:3001/packages', {
+                const {data: responseData} = await $fetch('http://localhost:3001/applied-packages', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -62,7 +66,7 @@ export const usePackagesStore = defineStore('packages', {
 
         async deletePackage(item) {
             try {
-                await fetch(`http://localhost:3001/packages/${item.id}`, {
+                await fetch(`http://localhost:3001/applied-packages/${item.id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'

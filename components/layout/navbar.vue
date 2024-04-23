@@ -25,19 +25,16 @@
           </div>
           <div class="hidden sm:ml-6 sm:mt-2 sm:block">
             <div class="flex space-x-4">
-              <nuxt-link class="active border-b-2 border-blue-500 font-medium" aria-current="page" to="/packages">
+              <nuxt-link to="/packages" exact-active-class="border-b-2 border-blue-500 font-medium" aria-current="page">
                 {{ $t('layouts.navbar.package_identification') }}
               </nuxt-link>
 
-              <nuxt-link class="hover:border-b-2 border-gray-100 font-medium" to="/applied-packages">
+              <nuxt-link to="/applied-packages" exact-active-class="border-b-2 border-blue-500 font-medium" class="hover:border-gray-100 font-medium">
                 {{ $t('layouts.navbar.package_usage') }}
-              </nuxt-link>
-
-              <nuxt-link class="hover:border-b-2 border-gray-100 font-medium" to="/packages-usages">
-                {{ $t('layouts.navbar.package_movements') }}
               </nuxt-link>
             </div>
           </div>
+
         </div>
 
         <div class="flex items-center space-x-4">
@@ -53,13 +50,15 @@
       </div>
     </div>
 
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2">
-        <nuxt-link to="/packages" class="active border-b-2 border-blue-500 font-medium" aria-current="page">{{ $t('layouts.navbar.package_identification') }}</nuxt-link>
-        <nuxt-link to="/applied-packages" class="hover:border-b-2 border-gray-100 block rounded-md px-3 py-2 text-base font-medium">{{ $t('layouts.navbar.package_usage') }}</nuxt-link>
-        <nuxt-link to="/packages-usages" class="hover:border-b-2 border-gray-100 block rounded-md px-3 py-2 text-base font-medium">{{ $t('layouts.navbar.package_movements') }}</nuxt-link>
+    <template>
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <nuxt-link to="/packages" exact-active-class="border-b-2 border-blue-500 font-medium" aria-current="page">{{ $t('layouts.navbar.package_identification') }}</nuxt-link>
+          <nuxt-link to="/applied-packages" exact-active-class="border-b-2 border-blue-500 font-medium" class="hover:border-gray-100 block rounded-md px-3 py-2 text-base font-medium">{{ $t('layouts.navbar.package_usage') }}</nuxt-link>
+        </div>
       </div>
-    </div>
+    </template>
+
   </nav>
 </template>
 

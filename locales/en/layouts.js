@@ -5,6 +5,8 @@ export default {
         cancel: 'Cancel',
         edit: 'Edit',
         delete: 'Delete',
+        remaining_time: 'Remaining Time',
+        day: 'Day'
     },
 
     navbar: {
