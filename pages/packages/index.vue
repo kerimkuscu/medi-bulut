@@ -148,7 +148,7 @@ export default {
     fetchData();
 
     const showModal = ref(false);
-    const packageName = packagesStore.name;
+    const packageName = packagesStore.packageName;
     const examination = packagesStore.examination;
     const control = packagesStore.control;
     const duration = packagesStore.duration;

@@ -22,7 +22,7 @@ export const usePackagesStore = defineStore('packages', {
         durationUnit: null,
         price: 0,
         currency: null,
-        userIds: null,
+        userIds: [],
         searchText: ''
     }),
 
@@ -34,7 +34,6 @@ export const usePackagesStore = defineStore('packages', {
         },
 
         async savePackage(newPackage) {
-            console.log(newPackage);
             const formData = {
                 name: newPackage.name,
                 examination: newPackage.examination,
